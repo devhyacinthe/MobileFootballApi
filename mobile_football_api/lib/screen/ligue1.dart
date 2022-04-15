@@ -26,7 +26,6 @@ class _Ligue1State extends State<Ligue1> {
     setState(() {
       _isloading = false;
     });
-    print(_match);
   }
 
   @override

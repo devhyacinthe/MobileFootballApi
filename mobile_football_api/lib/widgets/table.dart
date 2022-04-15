@@ -6,6 +6,7 @@ class TableClassement extends StatelessWidget {
       {Key? key,
       required this.name,
       required this.points,
+      required this.logo,
       required this.mj,
       required this.mg,
       required this.mn,
@@ -16,6 +17,7 @@ class TableClassement extends StatelessWidget {
       : super(key: key);
   final String name;
   final int points;
+  final String logo;
   final int mj;
   final int mg;
   final int mn;
@@ -40,6 +42,11 @@ class TableClassement extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
+                    CircleAvatar(
+                      backgroundColor: Colors.white,
+                      backgroundImage: NetworkImage(logo),
+                    ),
+                    const SizedBox(width: 8),
                     Text(name,
                         style: GoogleFonts.acme(
                             textStyle: const TextStyle(fontSize: 25),
@@ -47,7 +54,7 @@ class TableClassement extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(
-                  height: 15,
+                  height: 6,
                 ),
                 SingleChildScrollView(
                   scrollDirection: Axis.horizontal,

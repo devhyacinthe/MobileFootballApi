@@ -26,7 +26,6 @@ class _LigaClassState extends State<LigaClass> {
     setState(() {
       _isloading = false;
     });
-    print(_class);
   }
 
   @override
@@ -44,6 +43,7 @@ class _LigaClassState extends State<LigaClass> {
                   return TableClassement(
                       name: _class[index].name,
                       points: _class[index].points,
+                      logo: _class[index].logo,
                       mj: _class[index].matchPlay,
                       mg: _class[index].matchWin,
                       mn: _class[index].matchDraw,

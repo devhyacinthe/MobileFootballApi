@@ -26,7 +26,6 @@ class _BundesligaState extends State<Bundesliga> {
     setState(() {
       _isloading = false;
     });
-    print(_match);
   }
 
   @override

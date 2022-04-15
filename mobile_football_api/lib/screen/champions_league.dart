@@ -26,7 +26,6 @@ class _ChampionsleagueState extends State<Championsleague> {
     setState(() {
       _isloading = false;
     });
-    print(_match);
   }
 
   @override

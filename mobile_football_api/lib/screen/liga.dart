@@ -26,7 +26,6 @@ class _LigaState extends State<Liga> {
     setState(() {
       _isloading = false;
     });
-    print(_match);
   }
 
   @override

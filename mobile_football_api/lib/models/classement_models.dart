@@ -2,6 +2,7 @@ class ClassementModel {
   final int rank;
   final String name;
   final int points;
+  final String logo;
   final int goalDiff;
   final int matchPlay;
   final int matchWin;
@@ -14,6 +15,7 @@ class ClassementModel {
     required this.rank,
     required this.name,
     required this.points,
+    required this.logo,
     required this.goalDiff,
     required this.matchPlay,
     required this.matchWin,
@@ -28,6 +30,7 @@ class ClassementModel {
       rank: json['rank'] as int,
       name: json['team']['name'] as String,
       points: json['points'] as int,
+      logo: json['team']['logo'] as String,
       goalDiff: json['goalsDiff'] as int,
       matchPlay: json['all']['played'] as int,
       matchWin: json['all']['win'] as int,
