@@ -2,7 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mobile_football_api/screen/a_propos_page.dart';
+import 'package:mobile_football_api/screen/bundes_class.dart';
 import 'package:mobile_football_api/screen/home_page.dart';
+import 'package:mobile_football_api/screen/liga_class.dart';
+import 'package:mobile_football_api/screen/ligue1_class.dart';
+import 'package:mobile_football_api/screen/pl_class.dart';
 
 class ClassementPage extends StatefulWidget {
   const ClassementPage({Key? key}) : super(key: key);
@@ -82,7 +86,9 @@ class _ClassementPageState extends State<ClassementPage> {
                 style: GoogleFonts.mcLaren(
                     textStyle: const TextStyle(
                         fontSize: 20, color: Colors.lightBlue))),
-            onTap: () {},
+            onTap: () {
+              Get.to(() => const PlClass());
+            },
           ),
           const SizedBox(height: 10),
           ListTile(
@@ -90,7 +96,9 @@ class _ClassementPageState extends State<ClassementPage> {
                 style: GoogleFonts.mcLaren(
                     textStyle: const TextStyle(
                         fontSize: 20, color: Colors.lightBlue))),
-            onTap: () {},
+            onTap: () {
+              Get.to(() => const LigaClass());
+            },
           ),
           const SizedBox(height: 10),
           ListTile(
@@ -98,7 +106,9 @@ class _ClassementPageState extends State<ClassementPage> {
                 style: GoogleFonts.mcLaren(
                     textStyle: const TextStyle(
                         fontSize: 20, color: Colors.lightBlue))),
-            onTap: () {},
+            onTap: () {
+              Get.to(() => const Ligue1Class());
+            },
           ),
           const SizedBox(height: 10),
           ListTile(
@@ -106,23 +116,9 @@ class _ClassementPageState extends State<ClassementPage> {
                 style: GoogleFonts.mcLaren(
                     textStyle: const TextStyle(
                         fontSize: 20, color: Colors.lightBlue))),
-            onTap: () {},
-          ),
-          const SizedBox(height: 10),
-          ListTile(
-            title: Text("Champions League",
-                style: GoogleFonts.mcLaren(
-                    textStyle: const TextStyle(
-                        fontSize: 20, color: Colors.lightBlue))),
-            onTap: () {},
-          ),
-          const SizedBox(height: 10),
-          ListTile(
-            title: Text("Europa League",
-                style: GoogleFonts.mcLaren(
-                    textStyle: const TextStyle(
-                        fontSize: 20, color: Colors.lightBlue))),
-            onTap: () {},
+            onTap: () {
+              Get.to(() => const BundesClass());
+            },
           ),
           const SizedBox(height: 10),
         ],
